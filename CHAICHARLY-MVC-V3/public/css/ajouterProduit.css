@@ -1,0 +1,144 @@
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #121212;
+    --container-bg: #ffffff;
+    --border-color: #ddd;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --label-color: #7b1e1e;
+    --input-border: #ccc;
+    --input-bg: #ffffff;
+    --btn-retour-bg: #a52a2a;
+    --btn-retour-hover: #801f1f;
+    --btn-retour-text: #ffffff;
+    --btn-submit-bg: #3c8d40;
+    --btn-submit-hover: #2f7032;
+  }
+  
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --container-bg: #1e1e1e;
+    --border-color: #444;
+    --box-shadow: rgba(255, 255, 255, 0.05);
+    --label-color: #e57373;
+    --input-border: #666;
+    --input-bg: #2a2a2a;
+    --btn-retour-bg: #a52a2a;
+    --btn-retour-hover: #801f1f;
+    --btn-retour-text: #ffffff;
+    --btn-submit-bg: #3c8d40;
+    --btn-submit-hover: #2f7032;
+  }
+  
+  /* ajoutervin.css */
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  
+  
+  /* Conteneur principal de la page ajoutervin */
+  .ajoutervin-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: var(--container-bg);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--box-shadow);
+  }
+  
+  /* Titre de la page */
+  .ajoutervin-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--label-color);
+  }
+  
+  /* Bouton retour */
+  .btn-retour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 150px;
+    padding: 10px 15px;
+    background-color: var(--btn-retour-bg);
+    color: var(--btn-retour-text);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-retour:hover {
+    background-color: var(--btn-retour-hover);
+  }
+  
+  /* Formulaire d'ajout de vin */
+  .ajoutervin-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels du formulaire */
+  .ajoutervin-container form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  /* Champs de saisie et textarea du formulaire */
+  .ajoutervin-container form input,
+  .ajoutervin-container form textarea,
+  .ajoutervin-container form select {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+  }
+  
+  /* Champ de saisie texte et numérique à 100% de la largeur */
+  .ajoutervin-container form input[type="text"],
+  .ajoutervin-container form input[type="number"],
+  .ajoutervin-container form textarea {
+    width: 100%;
+  }
+  
+  /* Bouton de validation */
+  .ajoutervin-container form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: var(--btn-submit-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet de survol pour le bouton */
+  .ajoutervin-container form button:hover {
+    background-color: var(--btn-submit-hover);
+  }
+  
