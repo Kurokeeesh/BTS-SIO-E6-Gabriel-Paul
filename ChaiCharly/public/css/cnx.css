@@ -1,0 +1,46 @@
+/*Connexion abonnés*/
+.cnx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    width: 100%;
+    height: 641px;
+    background-color: #500614;
+    p{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+.cnx-form {
+    background-color: #6D071A;
+    padding: 40px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cnx-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.cnx-form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inria', serif;
+    color: #333;
+}
+
+.cnx-form input::placeholder{
+    color: #999;
+}

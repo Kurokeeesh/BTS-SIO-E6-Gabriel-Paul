@@ -1,0 +1,180 @@
+/* admin.css */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --card-color: #f9f9f9;
+    --input-bg: #f1f1f1;
+    --border-color: #ccc;
+    --btn-bg: #a52a2a;
+    --btn-text: #ffffff;
+    --btn-hover: #801f1f;
+    --accent-color: #7b1e1e;
+    --delete-color: #d00;
+    --add-bg: #3c8d40;
+    --add-bg-hover: #2f7032;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --card-color: #1e1e1e;
+    --input-bg: #2a2a2a;
+    --border-color: #444;
+    --btn-bg: #a52a2a;
+    --btn-text: #ffffff;
+    --btn-hover: #801f1f;
+    --accent-color: #e57373;
+    --delete-color: #ff5555;
+    --add-bg: #3c8d40;
+    --add-bg-hover: #2f7032;
+    --card-shadow: rgba(255, 255, 255, 0.05);
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .btn-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .categorie-titre {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .categorie-titre h2 {
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 5px;
+    color: var(--accent-color);
+  }
+  
+  .admin-header {
+    text-align: center;
+  }
+  
+  .admin-intro {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .btn-ajouter {
+    display: inline-block;
+    background-color: var(--add-bg);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .btn-ajouter:hover {
+    background-color: var(--add-bg-hover);
+  }
+  
+  .grid-vin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .card-vin {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 6px var(--card-shadow);
+  }
+  
+  .card-vin form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-vin label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .card-vin input,
+  .card-vin textarea,
+  .card-vin select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+  }
+  
+  .card-vin button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-vin button:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  .card-vin a {
+    margin-top: 10px;
+    color: var(--delete-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .card-vin a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-supprimer-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn-supprimer {
+    color: var(--delete-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .btn-supprimer:hover {
+    text-decoration: underline;
+  }
+  
