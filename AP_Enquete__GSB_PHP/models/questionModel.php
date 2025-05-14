@@ -2,8 +2,8 @@
 function insererQuestion($pdo, $cle,  $cleQuestionnaire, $rang, $typeQ, $name, $text, $reponses, $default) {
     $stmt = $pdo->prepare("
         INSERT INTO Questions (
-            cle, cle_questionnaire, rang, typeQ, name, text,
-            reponse1, reponse2, reponse3, reponse4, reponse5, `defaut`
+            id_question, cle_questionnaire, rang, typeQ, name, text,
+            reponse1, reponse2, reponse3, reponse4, reponse5, `default`
         )
         VALUES (
             :cle, :cle_questionnaire, :rang, :typeQ, :name, :text,
